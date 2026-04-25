@@ -24,7 +24,7 @@ export default function CountUp({
   useEffect(() => {
     if (!shouldStart) return;
 
-    let start = 0;
+    const start = 0;
     const startTime = performance.now();
     
     const animate = (currentTime: number) => {

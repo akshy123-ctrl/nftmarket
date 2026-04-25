@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="md:col-span-2 space-y-6">
               <div className="flex items-center gap-3 font-outfit font-black text-2xl text-white">
                 <Zap size={24} className="text-accent-violet" fill="currentColor" />
-                BOLT-NFT'S
+                BOLT-NFT&apos;S
               </div>
               <p className="font-dm-sans text-white/50 max-w-sm leading-relaxed">
                 The next-generation NFT protocol built on Stellar. Automated royalties, 
@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-dm-sans font-bold text-white/20 uppercase tracking-widest">
-            <span>© 2026 BOLT-NFT'S PROTOCOL</span>
+            <span>© 2026 BOLT-NFT&apos;S PROTOCOL</span>
             <div className="flex gap-8">
               <span>Built on Soroban</span>
               <span>Stellar Mainnet</span>

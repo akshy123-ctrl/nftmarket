@@ -51,7 +51,7 @@ export default function Navbar() {
             </div>
           </div>
           <span className="text-2xl font-outfit font-black tracking-tighter text-white group-hover:tracking-normal transition-all duration-500 uppercase">
-            Bolt-NFT's
+            Bolt-NFT&apos;s
           </span>
         </Link>
 

@@ -120,7 +120,7 @@ export default function Home() {
             className="text-2xl font-medium text-white/40 max-w-3xl mx-auto mb-16 leading-relaxed font-dm-sans"
           >
             A high-fidelity protocol for minting, trading, and managing NFTs with 
-            built-in royalty splitting on the Bolt-NFT's network.
+            built-in royalty splitting on the Bolt-NFT&apos;s network.
           </motion.p>
 
           <motion.div
