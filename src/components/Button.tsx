@@ -5,7 +5,7 @@ import { Loader2 } from "lucide-react";
 import { ReactNode, ButtonHTMLAttributes } from "react";
 import { triggerClickEffect } from "@/lib/effects";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onDrag" | "onDragStart" | "onDragEnd" | "onAnimationStart"> {
   children: ReactNode;
   variant?: "primary" | "secondary" | "ghost";
   isLoading?: boolean;
