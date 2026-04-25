@@ -15,8 +15,23 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bolt-NFT's | Next-Gen NFT Protocol",
-  description: "High-fidelity protocol for minting, trading, and managing NFTs on Stellar.",
+  title: "Bolt-NFT's | Next-Gen NFT Protocol on Stellar",
+  description: "High-fidelity protocol for minting, trading, and managing NFTs on Stellar with automated royalty distribution.",
+  keywords: ["NFT", "Stellar", "Soroban", "Marketplace", "Web3", "Blockchain", "Royalties"],
+  authors: [{ name: "Bolt-NFT's Protocol Team" }],
+  openGraph: {
+    title: "Bolt-NFT's | Next-Gen NFT Protocol",
+    description: "High-fidelity protocol for minting and trading NFTs on Stellar.",
+    url: "https://fancy-marshmallow-9f45bb.netlify.app/",
+    siteName: "Bolt-NFT's",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bolt-NFT's | Next-Gen NFT Protocol",
+    description: "High-fidelity protocol for minting and trading NFTs on Stellar.",
+  },
 };
 
 import { StellarProvider } from "@/context/StellarContext";
