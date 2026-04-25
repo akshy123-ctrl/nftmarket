@@ -3,11 +3,11 @@
 A production-ready NFT marketplace built on the Stellar network using Soroban smart contracts. This project demonstrates advanced contract patterns, including atomic inter-contract calls for automated royalty distribution and real-time sales tracking.
 
 ## 🚀 Live Demo
-- **Live Application**: [https://lambent-marshmallow-09df9a.netlify.app](https://lambent-marshmallow-09df9a.netlify.app)
-- **Deployment Status**: [Netlify Deploys](https://app.netlify.com/projects/lambent-marshmallow-09df9a/deploys)
+- **Live Application**: [https://fancy-marshmallow-9f45bb.netlify.app/](https://fancy-marshmallow-9f45bb.netlify.app/)
+- **Deployment Status**: [Netlify Deploys](https://app.netlify.com/sites/fancy-marshmallow-9f45bb/deploys)
 
 ## 📊 CI/CD Status
-![CI Status](https://github.com/akshaykimkc/nft/actions/workflows/ci.yml/badge.svg)
+![CI Status](https://github.com/akshy123-ctrl/nftmarket/actions/workflows/ci.yml/badge.svg)
 
 ## 📱 Visual Preview
 
@@ -78,3 +78,5 @@ graph TD
 - [x] CI/CD status badge
 - [x] Contract addresses & hashes
 - [x] Inter-contract calls implementation
+- [x] CI/CD Pipeline (Passing)
+- [x] Verified build stability
