@@ -4,7 +4,7 @@ A production-ready NFT marketplace built on the Stellar network using Soroban sm
 
 ## 🚀 Live Demo
 - **Live Application**: [https://fancy-marshmallow-9f45bb.netlify.app/](https://fancy-marshmallow-9f45bb.netlify.app/)
-- **Deployment Status**: [Netlify Deploys](https://app.netlify.com/sites/fancy-marshmallow-9f45bb/deploys)
+- **Deployment Status**: [Netlify Deploys](https://thriving-chebakia-4ff822.netlify.app/)
 
 ## 📊 CI/CD Status
 ![CI Status](https://github.com/akshy123-ctrl/nftmarket/actions/workflows/ci.yml/badge.svg)
