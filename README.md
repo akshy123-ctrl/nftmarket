@@ -3,8 +3,8 @@
 A production-ready NFT marketplace built on the Stellar network using Soroban smart contracts. This project demonstrates advanced contract patterns, including atomic inter-contract calls for automated royalty distribution and real-time sales tracking.
 
 ## 🚀 Live Demo
-- **Live Application**: [https://fancy-marshmallow-9f45bb.netlify.app/](https://fancy-marshmallow-9f45bb.netlify.app/)
-- **Deployment Status**: [Netlify Deploys](https://thriving-chebakia-4ff822.netlify.app/)
+- **Live Application**: [https://nftmarket-iota.vercel.app/](https://nftmarket-iota.vercel.app/)
+- **Deployment Status**: [Vercel Deployment](https://nftmarket-iota.vercel.app/)
 
 ## 📊 CI/CD Status
 ![CI Status](https://github.com/akshy123-ctrl/nftmarket/actions/workflows/ci.yml/badge.svg)
@@ -17,11 +17,10 @@ A production-ready NFT marketplace built on the Stellar network using Soroban sm
 </p>
 
 ### Product Demo (Video)
-<p align="center">
-  <video src="videos/demo.mp4" width="100%" controls>
-    Your browser does not support the video tag.
-  </video>
-</p>
+[Click here to watch the demo video](videos/demo.mp4)
+
+> [!TIP]
+> If the video does not play directly in your browser, you can find it in the `videos/` folder of this repository.
 
 ### Creator Dashboard (Desktop)
 ![Creator Dashboard](dashboard.png)
@@ -57,11 +56,30 @@ The core protocol is backed by a comprehensive suite of automated tests covering
 | **Authorization Guard** | Confirms `require_auth` prevents unauthorized listing/buying/delisting. | `Passed` |
 | **Marketplace Lifecycle** | Tests listing, buying, and delisting edge cases (e.g., delisting after sale). | `Passed` |
 
-### 🧪 Running Tests Locally
-To verify the protocol logic, run the Soroban test suite:
+### 🧪 Detailed Testing Guide
+To verify the smart contract logic locally, follow these steps:
+
+#### 1. Install Prerequisites
+Ensure you have the [Stellar CLI](https://developers.stellar.org/docs/build/smart-contracts/getting-started/setup#install-the-stellar-cli) installed:
+```bash
+cargo install --locked stellar-cli --features opt
+```
+
+#### 2. Build the Contracts
+The Marketplace contract requires the other contracts to be built first to import their interfaces:
+```bash
+# Build all contracts in the workspace
+cargo build --target wasm32-unknown-unknown --release
+```
+
+#### 3. Run the Test Suite
+Execute the integration tests which simulate a full marketplace environment:
 ```bash
 cargo test
 ```
+
+#### 4. Understanding the Tests
+- **Integration Tests (`contracts/marketplace/src/test.rs`)**: These tests use a mocked environment to simulate multiple accounts (Seller, Buyer, Creator). It verifies that when a `buy_nft` call is made, the `RoyaltySplitter` contract is invoked atomically, funds are distributed, and ownership is transferred correctly.
 
 ## 📜 Deployed Contracts (Testnet)
 | Contract | Address |
