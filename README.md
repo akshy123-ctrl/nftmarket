@@ -16,6 +16,13 @@ A production-ready NFT marketplace built on the Stellar network using Soroban sm
   <img src="hero_mobile.png" width="300" alt="Mobile Hero" />
 </p>
 
+### Product Demo (Video)
+<p align="center">
+  <video src="videos/demo.mp4" width="100%" controls>
+    Your browser does not support the video tag.
+  </video>
+</p>
+
 ### Creator Dashboard (Desktop)
 ![Creator Dashboard](dashboard.png)
 
@@ -35,6 +42,25 @@ graph TD
     Splitter -->|3a. Transfer Royalty| Creator[Creator Account]
     Splitter -->|3b. Transfer Proceeds| Seller[Seller Account]
     Marketplace -->|4. Transfer NFT| Buyer
+```
+
+## ✅ Test Coverage & Verification
+
+The core protocol is backed by a comprehensive suite of automated tests covering the entire NFT lifecycle and financial distribution logic.
+
+### 🛡️ Smart Contract Security
+| Scenario | Description | Status |
+| :--- | :--- | :--- |
+| **Atomic Royalty Splitting** | Verifies that payments are precisely divided between seller and creator in a single transaction. | `Passed` |
+| **Inter-Contract Calls** | Ensures the Marketplace successfully invokes the Splitter contract for trustless distribution. | `Passed` |
+| **NFT Asset Minting** | Validates ERC-721 equivalent minting logic and metadata integrity on Soroban. | `Passed` |
+| **Authorization Guard** | Confirms `require_auth` prevents unauthorized listing/buying/delisting. | `Passed` |
+| **Marketplace Lifecycle** | Tests listing, buying, and delisting edge cases (e.g., delisting after sale). | `Passed` |
+
+### 🧪 Running Tests Locally
+To verify the protocol logic, run the Soroban test suite:
+```bash
+cargo test
 ```
 
 ## 📜 Deployed Contracts (Testnet)
@@ -72,11 +98,13 @@ graph TD
 ## ✅ Submission Checklist
 - [x] Public GitHub repository
 - [x] README with complete documentation
-- [x] 8+ meaningful commits (Current: 13)
+- [x] 8+ meaningful commits (Current: 14)
 - [x] Live demo link
+- [x] Product demo video
 - [x] Mobile responsive screenshot
 - [x] CI/CD status badge
 - [x] Contract addresses & hashes
+- [x] Test Coverage Documentation
 - [x] Inter-contract calls implementation
 - [x] CI/CD Pipeline (Passing)
 - [x] Verified build stability
