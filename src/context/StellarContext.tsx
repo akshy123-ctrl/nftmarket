@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
-import { getAddress, isConnected, setAllowed, signTransaction } from "@stellar/freighter-api";
+import { getAddress, setAllowed, signTransaction } from "@stellar/freighter-api";
 
 interface StellarContextType {
   address: string | null;
@@ -27,7 +27,7 @@ export function StellarProvider({ children }: { children: ReactNode }) {
         if (result && result.address) {
           setAddress(result.address);
         }
-      } catch (err) {
+      } catch {
         // Silent fail for auto-connect
       }
     };

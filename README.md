@@ -16,11 +16,10 @@ A production-ready NFT marketplace built on the Stellar network using Soroban sm
   <img src="hero_mobile.png" width="300" alt="Mobile Hero" />
 </p>
 
-### Product Demo (Video)
-[Click here to watch the demo video](videos/demo.mp4)
-
-> [!TIP]
-> If the video does not play directly in your browser, you can find it in the `videos/` folder of this repository.
+### Product Demo
+<p align="center">
+  <img src="videos/demo.gif" width="100%" alt="Product Demo" />
+</p>
 
 ### Creator Dashboard (Desktop)
 ![Creator Dashboard](dashboard.png)

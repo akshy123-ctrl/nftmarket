@@ -4,8 +4,7 @@ import { useStellar } from "@/context/StellarContext";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Wallet, Menu, X, ArrowRight, Zap, Activity, Globe } from "lucide-react";
-import { triggerClickEffect } from "@/lib/effects";
+import { Wallet, Menu, X, ArrowRight, Zap, Globe } from "lucide-react";
 import Button from "./Button";
 
 export default function Navbar() {
@@ -156,7 +155,7 @@ export default function Navbar() {
                      <p className="text-xs font-bold text-white">Stellar Testnet</p>
                    </div>
                  </div>
-                 <Button onClick={connect} icon={<Wallet size={18} />}>
+                 <Button onClick={address ? undefined : connect} icon={<Wallet size={18} />}>
                    {address ? truncatedAddress : "Connect Wallet"}
                  </Button>
               </div>
